@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">lv</string>
+
+    <string-array name="FishingStyleArray">
+        <item>בוס</item>
+        <item>פתיון</item>
+        <item>זרזור</item>
+        <item>גיג</item>
+        <item>דייג בצלילה</item>
+        <item>בולוס</item>
+        <item> יציאה בסירה</item>
+        <item>catch AND release</item>
+        <item>הכל הולך</item>
+        <item>אחר</item>
+
+    </string-array>
+</resources>
