@@ -22,21 +22,19 @@ public class Meetings extends AppCompatActivity {
      @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listv);
+        setContentView(R.layout.activity_listv_meetings);
 
         Intent intent = getIntent();
-        final ArrayList<UserInfo> list =  (ArrayList<UserInfo>) intent.getSerializableExtra("dataset");
-//get arraylist of userInfo
+        final ArrayList<UserInfo> list =  (ArrayList<UserInfo>) intent.getSerializableExtra("dataset"); //get arraylist of userInfo
+        final ListView listView = (ListView) findViewById(R.id.list);
 
-         final ListView listView = (ListView) findViewById(R.id.list);
-
-         MyAdapter myAdapter = new MyAdapter(this, R.layout.row, list);//this class, xml of row, list
-         listView.setAdapter(myAdapter);
+        MyAdapter myAdapter = new MyAdapter(this, R.layout.row, list);//this class, xml of row, list
+        listView.setAdapter(myAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView parent, View v, int position, long id) {
                 //parent-: The AdapterView where the click happened.
-                LayoutInflater li = LayoutInflater.from(parent.getContext());// fullfill the layout in the xml
+                LayoutInflater li = LayoutInflater.from(parent.getContext());// fulfill the layout in the xml
                 View view = li.inflate(R.layout.dialog, null);
                 final TextView userInput = (TextView) view.findViewById(R.id.info);
 
