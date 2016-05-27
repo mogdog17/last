@@ -12,13 +12,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class MeetingsActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     EditText txtName,txtLocation, txtdetails;
     Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meetings);
+        setContentView(R.layout.activity_main);
 
         Button contnu = (Button)findViewById(R.id.btn);
         txtName = (EditText)findViewById(R.id.name);
@@ -42,9 +42,9 @@ public class MeetingsActivity extends AppCompatActivity {
 
                 list.add(0, user1);// push to location 0
 
-                Intent intent = new Intent(MeetingsActivity.this, Meetings.class);
-                intent.putExtra("dataset", list);// can be sent because it is ArrayList<UserInfo>, UserInfo is seralizable
-                startActivity(intent);
+                Intent intent2 = new Intent(MainActivity.this, Meetings.class);
+                intent2.putExtra("dataset", list);// can be sent because it is ArrayList<UserInfo>, UserInfo is seralizable
+                startActivity(intent2);
             }
         });
     }
