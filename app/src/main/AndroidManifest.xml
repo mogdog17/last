@@ -21,7 +21,6 @@
         <activity android:name=".CaughtFishActivity" />
         <activity android:name=".NoFishActivity" />
         <activity android:name=".Dag2Main"></activity>
-        <activity android:name=".PopUpTest"></activity>
     </application>
 
 </manifest>
