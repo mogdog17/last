@@ -16,9 +16,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text=":סוג הדייג"
+        android:text="סוג הדייג:"
         android:id="@+id/textView8"
-        android:layout_marginTop="69dp"
         android:layout_below="@+id/textView4"
         android:layout_alignParentEnd="true" />
     <Spinner
@@ -30,7 +29,8 @@
         android:layout_column="23"
         android:layout_weight="1"
         android:layout_alignTop="@+id/textView8"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView5" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="איפה נתפס הדג?"
         android:id="@+id/textView6"
-        android:layout_alignBottom="@+id/editText2"
+        android:layout_above="@+id/checkBox"
         android:layout_alignStart="@+id/textView7" />
 
     <CheckBox
@@ -71,7 +71,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:id="@+id/editText2"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/textView7"
         android:layout_alignParentStart="true" />
 
 
@@ -85,22 +85,39 @@
         android:text="העלה תמונה:"
         android:id="@+id/textView5"
         android:layout_below="@+id/checkBox"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="47dp" />
+        android:layout_alignEnd="@+id/textView7" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageButton"
         android:layout_alignBottom="@+id/textView5"
-        android:layout_alignEnd="@+id/editText2" />
+        android:layout_toEndOf="@+id/editText" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="שלח"
         android:id="@+id/bon3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageButton" />
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="פרטים נוספים:"
+        android:id="@+id/textView11"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView11"
+        android:layout_alignEnd="@+id/checkBox"
+        android:layout_alignStart="@+id/textView4" />
 
 </RelativeLayout>
