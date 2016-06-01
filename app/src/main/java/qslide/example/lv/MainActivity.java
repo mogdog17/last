@@ -29,16 +29,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String option = mOptionsArray[position];
+                Intent intent;
                 switch(option){
                     case "דיווחים":
                         Intent I = new Intent(MainActivity.this, LiveReportActivity.class);
                         startActivity(I);
                         break;
                     case "מפגשים":
-                        Intent intent = new Intent(MainActivity.this, MeetingsActivity.class);
+                        intent = new Intent(MainActivity.this, MeetingsActivity.class);
                         startActivity(intent);
                         break;
                     case "דג2":
+                        intent = new Intent(MainActivity.this, Dag2.class);
+                        startActivity(intent);
                         break;
                     case "צ'אט":
                         break;
