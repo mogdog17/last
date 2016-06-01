@@ -34,7 +34,7 @@ public class Meetings extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView parent, View v, int position, long id) {
                 //parent-: The AdapterView where the click happened.
-                LayoutInflater li = LayoutInflater.from(parent.getContext());// fulfill the layout in the xml
+                LayoutInflater li = LayoutInflater.from(parent.getContext());// fulfill the report in the xml
                 View view = li.inflate(R.layout.dialog, null);
                 final TextView userInput = (TextView) view.findViewById(R.id.info);
 

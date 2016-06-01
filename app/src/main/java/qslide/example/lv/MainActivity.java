@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 String option = mOptionsArray[position];
                 switch(option){
                     case "דיווחים":
+                        Intent I = new Intent(MainActivity.this, LiveReportActivity.class);
+                        startActivity(I);
                         break;
                     case "מפגשים":
                         Intent intent = new Intent(MainActivity.this, MeetingsActivity.class);

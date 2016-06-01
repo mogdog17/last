@@ -18,7 +18,7 @@ public class MeetingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.MeetingsActivity);
+        setContentView(R.layout.activity_meetings);
 
         Button contnu = (Button)findViewById(R.id.btn);
         txtName = (EditText)findViewById(R.id.name);
